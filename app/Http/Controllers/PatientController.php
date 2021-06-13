@@ -59,7 +59,15 @@ class PatientController extends Controller
     {
 
         $data = Patient::all()->find($id);
-        //return json_decode($data->dietMethod->method , true)["week"];
+        $method = json_decode($data->dietMethod->method , true);
+        $method["patient"]["name"] = $data->name;
+        $method["patient"]["gsm"] = $data->gsm;
+        $method["patient"]["email"] = $data->email;
+        $method["patient"]["dietitian"] = $data->dietitian->name;
+        $method["patient"]["disease"] = $data->disease->name;
+        $method["patient"]["created_at"] = $data->created_at;
+        $method["patient"]["updated_At"] = $data->updated_at;
+        $data->output = json_encode($method);
         return view('patient.show')->with('data',$data);
     }
 

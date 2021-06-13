@@ -108,10 +108,10 @@
             </ul>
         </div>
         <div id="toggleJsonTrigger" class="bg-indigo-600 w-full h-20 mt-5 text-center align-baseline pt-6">
-            <span class="text-bold text-xl text-indigo-100">GetJSON</span>
+            <span class="text-bold text-xl text-indigo-100">JSON</span>
         </div>
         <div id="jsonOutput" class="w-full p-5 mb-40 bg-indigo-100 text-gray-700">
-            {{$data->dietMethod->method}}
+            {{$data->output}}
         </div>
     </div>
 </x-app-layout>
