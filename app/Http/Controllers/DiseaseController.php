@@ -51,7 +51,7 @@ class DiseaseController extends Controller
      */
     public function show($id)
     {
-        return $id;
+        //return view('disease.index');
     }
 
     /**
@@ -79,7 +79,7 @@ class DiseaseController extends Controller
         $disease->name = $request->name;
         $disease->description = $request->description;
         $disease->save();
-        return redirect('disease/'.$disease->id);
+        return redirect('disease');
     }
 
     /**

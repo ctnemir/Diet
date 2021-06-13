@@ -121,9 +121,9 @@
                 focus:shadow-outline-purple dark:focus:shadow-outline-gray"
                         name="diet_method_id">
                     <option value="">Seçiniz</option>
-                    <option>Gluten Free</option>
-                    <option>Yeşillik Dünyası</option>
-                    <option>Deniz Mahsulleri</option>
+                    @foreach(\App\Models\DietMethod::all() as $disease)
+                        <option value="{{$disease->id}}">{{$disease->name}}</option>
+                    @endforeach
                 </select>
             </label>
             <label class="block mt-4 text-sm">

@@ -1,7 +1,7 @@
 <x-app-layout title="Dashboard">
     <div class="container grid px-6 mx-auto">
-        <h1 class="my-6 text-center text-4xl font-semibold text-gray-700 dark:text-gray-200">
-            DİET
+        <h1 class="mt-72 text-center text-4xl font-semibold text-gray-700 dark:text-gray-200">
+            <b>DİET</b> <br> Diyetisyen Yönetim Paneli
         </h1>
 
 

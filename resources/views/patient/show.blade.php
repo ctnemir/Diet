@@ -97,7 +97,7 @@
                         <li class="bg-indigo-200">
                             <ul class="mb-4">
                                 @foreach($meal as $k => $food)
-                                    <li class="mx-auto text-center font-light">{{$food}}</li>
+                                    <li class="mx-auto py-2 border-t- border-b border-gray-700 text-center font-light">{{$food}}</li>
                                 @endforeach
                             </ul>
                         </li>
